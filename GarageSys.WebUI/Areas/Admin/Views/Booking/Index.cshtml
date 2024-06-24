@@ -1,0 +1,87 @@
+﻿@using GarageSys.WebUI.Areas.Admin.Models
+@model List<BookingVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<!-- Datatable single column searching -->
+<div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+    <div class="widget-content widget-content-area br-6">
+        <div>
+            <div class="float-left">
+                <h4 class="table-header my-3">
+                    Confirmed events
+                </h4>
+            </div>
+
+            <div class="float-right">
+                <a class="btn btn-primary my-3" data-toggle="modal" data-target="#AddModal" id="add-new">
+                    
+                </a>
+            </div>
+        </div>
+
+
+        <div class="table-responsive mb-4">
+            <table id="single-column-search" class="table table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Description</th>
+                        <th>Booking Date</th>
+                        <th>Customer </th>
+                        <th>Booking Status</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+
+                        <tr href="#">
+                            <td>@item.Id</td>
+                            <td>@item.Desc</td>
+                            <td>@item.BookingDate.ToString("")</td>
+                            <td>@item?.Customer?.FullName</td>
+                            <td>@item?.BookingState.ToString()</td>
+                            <td>
+                                <a asp-action="Details" asp-route-id="@item?.Id"
+                                   class="open-Dialog btn btn-outline-primary"><i class="las la-edit"></i></a>
+
+                               @*  <a class="btn btn-outline-danger delete"
+                                   id="@item.Id" name="delete"><i class="las la-trash"></i></a> *@
+                            </td>
+                        </tr>
+
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>#</th>
+                        <th>Arabic Name</th>
+                        <th>English Name</th>
+                        <th>Code</th>
+                        <th>Operations</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+
+       
+
+        $(document).ready(function () {
+            // data table
+            initTable('single-column-search');
+
+        });
+</script>
+} 

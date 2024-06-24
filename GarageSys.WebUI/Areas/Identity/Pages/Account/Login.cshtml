@@ -1,0 +1,115 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    if (@ViewData["url"].ToString().StartsWith("/admin"))
+        Layout = "/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@if (ViewData["url"].ToString() == "/Booking")
+{
+    
+<div class="row">
+        <div class="col-md-4">
+        </div>
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post">
+                <h2>Use a local account to log in.</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                    <label asp-for="Input.Email" class="form-label">Email</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                    <label asp-for="Input.Password" class="form-label">Password</label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="checkbox mb-3">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                    </label>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                    <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+   
+    </div>
+}
+else if (ViewData["url"].ToString().StartsWith("/admin"))
+{
+    
+    <div class="container-fluid login-two-container">
+        <div class="row main-login-two">
+
+            <div class="col-4"></div>
+            <div class="col-4 p-0">
+                <form id="account" method="post">
+                    <div class="login-two-start">
+                        <div class="text-center">
+                             <img src="~/admin/assets/img/logo.png" alt="logo" style="width:auto; height:120px;">
+                           
+                        </div>
+                        <h6 class="right-bar-heading px-3 mt-2 text-dark text-center font-30 text-uppercase">Admin Panel</h6>
+                        <p class="text-center text-muted mt-1 mb-3 font-14">Login</p>
+                        <div class="login-two-inputs mt-5 text-center">
+                            <input asp-for="Input.Email" type="text" placeholder="Email" />
+                            <i class="las la-user-alt"></i>
+                        </div>
+                        <div class="login-two-inputs mt-4 text-center">
+                            <input asp-for="Input.Password" type="password" placeholder="Password" />
+                            <i class="las la-lock"></i>
+                        </div>
+                       
+                        <div class="login-two-inputs mt-5 text-center">
+                            <button class="ripple-button ripple-button-primary w-50 btn-login ml-3 mr-3" type="submit">
+                                <div class="ripple-ripple js-ripple">
+                                    <span class="ripple-ripple__circle"></span>
+                                </div>
+                                Login
+                            </button>
+                        </div>
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/admin/assets/js/pages/faq/faq.js"></script>
+    <script>
+        $('.sidebar-wrapper').addClass("d-none");
+        $('.header-container').addClass("d-none");
+        $('.footer-wrapper').addClass("d-none");
+        $(".sub-header-container").addClass("d-none");
+        $('.main-content').css("margin-right", "0px");
+        $('.main-content').css("margin-top", "0px");
+        $('.main-content').css("margin-left", "0px");
+    </script>
+}

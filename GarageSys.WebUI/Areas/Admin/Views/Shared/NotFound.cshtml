@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "NotFound";
+}
+
+<div class="layout-px-spacing">
+    <div class="layout-top-spacing mb-5 mt-5">
+        <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="mb-3">Oops!</h1>
+                    <p class="font-25 mb-4">Sorry, We can't seem to find the page you're looking for.</p>
+                    <a class="btn bg-gradient-primary text-white">Back to Home</a>
+                </div>
+                <div class="col-md-5 pr-5 mt-5">
+                    <img src="~/admin/assets/img/error-404-1.jpg" width="100%" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script src="~/admin/assets/js/pages/faq/faq.js"></script>
+    <script>
+        $('.sidebar-wrapper').addClass("d-none");
+        $('.header-container').addClass("d-none");
+
+        $('.main-content').css("margin-right", "0px");
+        $('.main-content').css("margin-left", "0px");
+        $('.main-content').css("margin-top", "0px");
+    </script>
+}

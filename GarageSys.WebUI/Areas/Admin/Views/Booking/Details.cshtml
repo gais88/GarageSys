@@ -1,0 +1,253 @@
+﻿@using GarageSys.WebUI.Areas.Admin.Models
+@model BookingDetailsVM
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+    <div class="widget-content widget-content-area br-6">
+        <div class="content-header clearfix pb-3">
+            <div class="float-left">
+                <h1 style="display:inline;">
+                    Booking Details
+                </h1>
+                <span>
+                    <a asp-action="index" class="btn btn-dark">Back <i class="las la-arrow-circle-left"></i></a>
+                </span>
+            </div>
+
+            <div class="float-right">
+                @*<button type="submit" name="save" class="btn btn-primary">
+                <i class="far fa-save"></i>
+                حفظ
+                </button>*@
+            </div>
+        </div>
+
+        <div id="accordion3" class="mb-2">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    Booking Details
+                    <button type="button" class="btn btn-outline-dark float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion3">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label asp-for="BookingDate" class="col-form-label" placeholder=""> Booking Date : </label>
+                                <label asp-for="BookingDate" class="col-form-label" placeholder=""> @Model.BookingDate</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Customer" class="col-form-label">Customer : </label>
+                                <label asp-for="Customer" class="col-form-label">@Model.Customer.FullName </label>
+                                <input type="hidden" id="customer-id" value="@Model.CustomerId" />
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="BookingState" class="col-form-label">Status : </label>
+                                <label asp-for="BookingState" class="col-form-label">@Model.BookingState.ToString()</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Services" class="col-form-label">Services :</label>
+                                @foreach(var item in Model.Services)
+                                {
+                                <label  class="col-form-label">@item.Title , </label>
+                                    
+                                }
+                            </div>
+                          
+                        </div>
+                        @if(Model.Vehicles != null)
+                        {
+                            <!-- Datatable single column searching -->
+                            <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                                <div class="widget-content widget-content-area br-6">
+                                    <div>
+                                        <div class="float-left">
+                                            <h4 class="table-header my-3">
+                                                Vehicles
+                                            </h4>
+                                        </div>
+
+                                        <div class="float-right">
+                                            <a class="btn btn-primary my-3" data-toggle="modal" data-target="#AddModal" id="add-new">
+                                                <i class="las la-plus-square"></i>
+                                                Create New Vehicle
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="table-responsive mb-4">
+                                        <table id="single-column-search" class="table table-hover" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Palte Number</th>
+                                                    <th>Operations</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model.Vehicles)
+                                                {
+
+
+                                                    <tr href="#">
+                                                        <td>@item.Id</td>
+                                                        <td>@item.PlateNumber</td>
+                                                        <td>
+                                                            <a asp-controller="Vehicle" asp-action="MakeProfile" asp-route-id="@item?.Id"
+                                                               class="open-Dialog btn btn-outline-primary"><i class="las la-edit"></i></a>
+
+                                                            @*  <a class="btn btn-outline-danger delete"
+                                                    id="@item.Id" name="delete"><i class="las la-trash"></i></a> *@
+                                                        </td>
+                                                    </tr>
+
+                                                }
+
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Palte Number</th>
+                                                    <th>Operations</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+                     
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="AddModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-s" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myExtraLargeModalLabel">Create New </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="las la-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-lg-12 layout-spacing">
+                    <div class="widget-content widget-content-area">
+                        <div class="w-100">
+                            <input id="id" hidden />
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <label>PlateNumber <span class="text-danger">*</span>:</label>
+                                    <input type="text" id="PlateNumber" class="form-control" placeholder="">
+                                   
+                                    @*<span class="form-text text-muted">Please enter your email</span>*@
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-primary" onclick="getInfo()" id="rwd">Get Info</button>
+                                </div>
+                                <div class="col-lg-12">
+                                        <table class="table table-sm">
+                                       <thead>
+                                           <th>key</th>
+                                           <th>value</th>
+                                       </thead>
+                                       <tbody id="rwd-data">
+
+                                       </tbody>
+                                   </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel</button>
+                    <button type="button" class="btn btn-primary" href="#" onclick="save()" id="btnSave">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+@section Scripts
+{
+    <script>
+
+
+            var vehicaleHasDetails = false;
+
+        $(document).ready(function () {
+            // data table
+            var table = initTable('single-column-search');
+
+            let Modeltitle = "Add";
+            $("#myExtraLargeModalLabel").html(Modeltitle);
+            var PlateNumber = $(this).data('PlateNumber');
+            $(".modal-body #PlateNumber").val(PlateNumber);
+
+            $('#add-new').click(function () {
+                let modeltTitle = "Add New";
+                $("#myExtraLargeModalLabel").html(modeltTitle);
+                $(".modal-body #PlateNumber").val('');
+
+            });
+        });
+            //get vehcial Info
+
+           
+           // add new
+            function save() {
+                var id = $('#id').val();
+                var PlateNumber = $("#PlateNumber").val().toUpperCase();
+                var customerId = $("#customer-id").val();
+
+                var SendInfo = {
+
+                    "plateNumber": PlateNumber,
+                    "customerId": customerId,
+
+                }
+
+            let url = `/admin/Vehicle/SaveVehicle?plateNumber=${PlateNumber}&customerId=${customerId}`;
+            if (vehicaleHasDetails)
+            AjaxPostRequest(url, "post", null, addSuccess)
+
+                   
+                
+                
+
+        
+        };
+        function getInfo() {
+            let kenteken = $("#PlateNumber").val().toUpperCase();
+            console.log(kenteken);
+            let url = "https://opendata.rdw.nl/resource/d4mv-vhzc.json?kenteken=" + kenteken;
+            AjaxGetRequest(url).then((res) => {
+                let ele = "";
+                let i = 0;
+                
+                $.each(res, function (index, jsonObject) {
+                    $.each(jsonObject, function (key, val) {
+                        
+                        i++;
+                        if (i % 2 == 0 || i ==1) {  ele += "<tr>"; }
+                        ele += `<td>${key}</td><td>${val}</td>`;
+                        if (i % 2 == 0 || i == 1) ele += "</tr>";
+                        
+                    });
+                });
+                vehicaleHasDetails = true;
+                console.log(ele);
+                $('#rwd-data').html(ele);
+               
+            });
+        }
+    </script>
+} 
