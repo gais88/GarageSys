@@ -5,198 +5,2022 @@
     var check = (User.Identity.IsAuthenticated && !User.IsInRole("SuperAdmin"));
 
 }
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        
 
-<head>
-    <meta charset="utf-8">
-    <title>Auto Arts</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+        <title>Auto Arts B.V </title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
 
-    <!-- Favicon -->
-    <link href="assets/assets/img/favicon.ico" rel="icon">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.artureanec.com\/themes\/marketum\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.8"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='sbi_styles-css'  href='./assets/newTheme/css/style.min.css' type='text/css' media='all' />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #d30000;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='./assets/newTheme/css/styles.css' type='text/css' media='all' />
 
-    <link href="~/admin/plugins/select2/select2.min.css" rel="stylesheet" />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='marketum-fonts-css'  href='//fonts.googleapis.com/css?family=Manrope%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C500%7CCambon%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C&#038;ver=6.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='./assets/newTheme/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='marketum-font-awesome-css'  href='./assets/newTheme/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='marketum-theme-css'  href='./assets/newTheme/css/theme.css' type='text/css' media='all' />
+<style id='marketum-theme-inline-css' type='text/css'>
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    @@font-face {
+        font-family: 'Quentin';
+        src: url('./fonts/Quentin.eot');
+        src: url('./fonts/Quentin.eot#iefix') format('embedded-opentype'),
+             url('./fonts/Quentin.woff2') format('woff2'),
+             url('./fonts/Quentin.woff') format('woff'),
+             url('./fonts/Quentin.ttf') format('truetype'),
+             url('./fonts/Quentin.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Raph Lanok Future';
+        src: url('./fonts/RaphLanokFuture.ttf') format('truetype'),
+             url('./fonts/RaphLanokFuture.otf') format('otf');
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-ExtraLight.eot');
+        src: url('./fonts/Cambon-ExtraLight.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-ExtraLight.woff2') format('woff2'),
+            url('./fonts/Cambon-ExtraLight.woff') format('woff'),
+            url('./fonts/Cambon-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Regular.eot');
+        src: url('./fonts/Cambon-Regular.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Regular.woff2') format('woff2'),
+            url('./fonts/Cambon-Regular.woff') format('woff'),
+            url('./fonts/Cambon-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-BlackItalic.eot');
+        src: url('./fonts/Cambon-BlackItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-BlackItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-BlackItalic.woff') format('woff'),
+            url('./fonts/Cambon-BlackItalic.ttf') format('truetype');
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Light.eot');
+        src: url('./fonts/Cambon-Light.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Light.woff2') format('woff2'),
+            url('./fonts/Cambon-Light.woff') format('woff'),
+            url('./fonts/Cambon-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-SemiBoldItalic.eot');
+        src: url('./fonts/Cambon-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-SemiBoldItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-SemiBoldItalic.woff') format('woff'),
+            url('./fonts/Cambon-SemiBoldItalic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-LightItalic.eot');
+        src: url('./fonts/Cambon-LightItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-LightItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-LightItalic.woff') format('woff'),
+            url('./fonts/Cambon-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Bold.eot');
+        src: url('./fonts/Cambon-Bold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Bold.woff2') format('woff2'),
+            url('./fonts/Cambon-Bold.woff') format('woff'),
+            url('./fonts/Cambon-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-MediumItalic.eot');
+        src: url('./fonts/Cambon-MediumItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-MediumItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-MediumItalic.woff') format('woff'),
+            url('./fonts/Cambon-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Medium.eot');
+        src: url('./fonts/Cambon-Medium.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Medium.woff2') format('woff2'),
+            url('./fonts/Cambon-Medium.woff') format('woff'),
+            url('./fonts/Cambon-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-ExtraLightItalic.eot');
+        src: url('./fonts/Cambon-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-ExtraLightItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-ExtraLightItalic.woff') format('woff'),
+            url('./fonts/Cambon-ExtraLightItalic.ttf') format('truetype');
+        font-weight: 200;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Black.eot');
+        src: url('./fonts/Cambon-Black.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Black.woff2') format('woff2'),
+            url('./fonts/Cambon-Black.woff') format('woff'),
+            url('./fonts/Cambon-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-ExtraBoldItalic.eot');
+        src: url('./fonts/Cambon-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-ExtraBoldItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-ExtraBoldItalic.woff') format('woff'),
+            url('./fonts/Cambon-ExtraBoldItalic.ttf') format('truetype');
+        font-weight: 800;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-BoldItalic.eot');
+        src: url('./fonts/Cambon-BoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-BoldItalic.woff2') format('woff2'),
+            url('./fonts/Cambon-BoldItalic.woff') format('woff'),
+            url('./fonts/Cambon-BoldItalic.ttf') format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-ExtraBold.eot');
+        src: url('./fonts/Cambon-ExtraBold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-ExtraBold.woff2') format('woff2'),
+            url('./fonts/Cambon-ExtraBold.woff') format('woff'),
+            url('./fonts/Cambon-ExtraBold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-Italic.eot');
+        src: url('./fonts/Cambon-Italic.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-Italic.woff2') format('woff2'),
+            url('./fonts/Cambon-Italic.woff') format('woff'),
+            url('./fonts/Cambon-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    @@font-face {
+        font-family: 'Cambon';
+        src: url('./fonts/Cambon-SemiBold.eot');
+        src: url('./fonts/Cambon-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Cambon-SemiBold.woff2') format('woff2'),
+            url('./fonts/Cambon-SemiBold.woff') format('woff'),
+            url('./fonts/Cambon-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
 
-    <!-- Libraries Stylesheet -->
-    <link href="~/assets/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="~/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="~/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="https://rawgit.com/AuspeXeu/bootstrap-datetimepicker/master/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+        body {
+            background-color: #ffffff;
+        }
+    
+    .marketum_header_bg_overlay {
+        background-color: #ffffff;
+    }
+    
+    .marketum_header_button,
+    .marketum_alt_header_button {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        line-height: 70px;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        color: #ffffff;
+        background-color: #e85442;
+    }
+    
+    .marketum_header_button:hover,
+    .marketum_alt_header_button:hover {
+        color: #ffffff;
+        background-color: #e85442;
+    }
+    
+    .marketum_header_search_button .icon,
+    header.marketum_transparent_header_on.color_bg_on .marketum_header_search_button .icon,
+    .marketum_menu_mobile_search .icon {
+        color: #222628;
+    }
+    
+    header.marketum_transparent_header_on .marketum_header_search_button .icon {
+        color: #ffffff;
+    }
+    
+    header.marketum_transparent_header_on.color_bg_on .marketum_header_search_button .icon {
+        color: #222628;
+    }
+    
+    .marketum_header_search_button:hover .icon,
+    header.marketum_transparent_header_on .marketum_header_search_button:hover .icon,
+    header.marketum_transparent_header_on.color_bg_on .marketum_header_search_button:hover .icon {
+        color: #cf422f;
+    }
+    
+    .marketum_main_menu > li > a {
+        font-family: Manrope, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        color: #1f2531;
+    }
+    
+    header.marketum_transparent_header_on .marketum_main_menu > li > a {
+        color: #ffffff;
+    }
+    
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li > a {
+        color: #1f2531;
+    }
+    
+    .marketum_main_menu > li:hover > a,
+    .marketum_main_menu > li.current-menu-item > a,
+    .marketum_main_menu > li.current-menu-ancestor > a,
+    .marketum_main_menu > li > ul.sub-menu > li.current-menu-item > a,
+    .marketum_main_menu > li > ul.sub-menu > li.current-menu-ancestor > a,
+    .marketum_main_menu > li > ul.sub-menu > li > ul.sub-menu > li.current-menu-item > a {
+        color: #fc1d00;
+    }
+    
+    header.marketum_transparent_header_on .marketum_main_menu > li:hover > a,
+    header.marketum_transparent_header_on .marketum_main_menu > li.current-menu-item > a,
+    header.marketum_transparent_header_on .marketum_main_menu > li.current-menu-ancestor > a {
+        color: #ff1e00;
+    }
+    
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li:hover > a,
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li.current-menu-item > a,
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li.current-menu-ancestor > a {
+        color: #ff1e00;
+    }
+    
+    .marketum_main_menu > li.menu-item-has-children:hover > a:after,
+    .marketum_main_menu > li.current-menu-ancestor > a:after,
+    .marketum_main_menu > li > ul.sub-menu > li.current-menu-item > a:before,
+    .marketum_main_menu > li > ul.sub-menu > li.current-menu-ancestor > a:before,
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children.current-menu-item > a:after,
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children.current-menu-ancestor > a:after,
+    .marketum_main_menu > li > ul.sub-menu > li > ul.sub-menu > li.current-menu-item > a:before {
+        background-color: #ff1e00;
+    }
+    
+    header.marketum_transparent_header_on .marketum_main_menu > li.menu-item-has-children > a:after {
+        background-color: #ffffff;
+    }
+    
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li.menu-item-has-children > a:after {
+        background-color: #1f2531;
+    }
+    
+    header.marketum_transparent_header_on .marketum_main_menu > li.menu-item-has-children:hover > a:after,
+    header.marketum_transparent_header_on .marketum_main_menu > li.current-menu-ancestor > a:after {
+        background-color: #ff1e00;
+    }
+    
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li.menu-item-has-children:hover > a:after,
+    header.marketum_transparent_header_on.color_bg_on .marketum_main_menu > li.current-menu-ancestor > a:after {
+        background-color: #ff1e00;
+    }
+    
+    .marketum_main_menu li > ul.sub-menu,
+    .marketum_main_menu li > ul.sub-menu > li > ul.sub-menu {
+        background-color: #222628;
+    }
+    
+    .marketum_main_menu li > ul.sub-menu > li > a,
+    .marketum_main_menu li > ul.sub-menu > li > ul.sub-menu > li > a {
+        font-family: Manrope, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        color: #ffffff;
+    }
+    
+    .marketum_main_menu li ul.sub-menu > li a:before,
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children > a:after {
+        background-color: #ffffff;
+    }
+    
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children:hover > a:after,
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children.current-menu-item:hover > a:after,
+    .marketum_main_menu > li > ul.sub-menu > li.menu-item-has-children.current-menu-ancestor:hover > a:after {
+        background-color: #ffffff;
+    }
+    
+    .marketum_header_phone_container {
+        font-family: Manrope, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #818181;
+    }
+    
+    .marketum_header_phone_number {
+        font-size: 18px;
+        color: #222628;
+    }
+
+    .marketum_aside_dropdown_inner {
+        background-color: #222628;
+    }
+    
+    .marketum_aside_dropdown_close:before,
+    .marketum_aside_dropdown_close:after {
+        background-color: #a8a8a8;
+    }
+    
+    .marketum_aside_dropdown_close:hover:before,
+    .marketum_aside_dropdown_close:hover:after {
+        background-color: #ff1e00;
+    }
+    
+    .marketum_side_panel_promo {
+        color: #b7b7b7;
+    }
+    
+    .marketum_side_panel_info_container,
+    .marketum_side_panel_socials_container {
+        color: #ffffff;
+    }
+    
+    .marketum_side_panel_info_container a,
+    .marketum_side_panel_map .icon {
+        color: #e85442;
+    }
+    
+    .marketum_side_panel_phone_1 a,
+    .marketum_side_panel_phone_2 a {
+        color: #ffffff;
+    }
+    
+    .marketum_side_panel_info_container a:hover,
+    .marketum_side_panel_phone_1 a:hover,
+    .marketum_side_panel_phone_2 a:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_side_panel_socials {
+        font-size: 14px;
+    }
+    
+    .marketum_side_panel_socials a {
+        color: #ff1e00;
+    }
+    
+    .marketum_side_panel_socials a:hover {
+        color: #ffffff;
+    }
+
+    header .marketum_logo,
+    .marketum_preloader_logo,
+    .marketum_side_panel_logo,
+    header.marketum_transparent_header_on.color_bg_on .marketum_logo,
+    .marketum_404_logo_container a {
+        width: 226px;
+        height: 64px;
+        background: url("./assets/newTheme/images/logo_black.png") 0 0 no-repeat transparent;
+        background-size: 226px 64px;
+    }
+    
+    .marketum_side_panel_logo {
+        background: url("./assets/newTheme/images/logo_white.png") 0 0 no-repeat transparent;
+    }
+    
+    header.marketum_transparent_header_on .marketum_logo,
+    .marketum_top_footer_logo,
+    .marketum_footer_logo {
+        width: 226px;
+        height: 64px;
+        background: url("./assets/newTheme/images/logo_white.png") 0 0 no-repeat transparent;
+        background-size: 226px 64px;
+    }
+
+        header .marketum_logo,
+        .marketum_preloader_logo,
+        .marketum_side_panel_logo,
+        header.marketum_transparent_header_on.color_bg_on .marketum_logo,
+        .marketum_404_logo_container a {
+            width: 113px;
+            height: 32px;
+            background-size: 113px 32px;
+        }
+        
+        header.marketum_transparent_header_on .marketum_logo,
+        .marketum_top_footer_logo,
+        .marketum_footer_logo {
+            width: 113px;
+            height: 32px;
+            background-size: 113px 32px;
+        }
+    
+    .marketum_tagline_container {
+        font-family: Manrope, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        color: #a8a8a8;
+        background-color: #222628;
+    }
+    
+    .marketum_tagline_container a {
+        color: #ffffff;
+    }
+    
+    .marketum_tagline_container a:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_tagline_container .marketum_tagline_socials a {
+        color: #ffffff;
+    }
+    
+    .marketum_tagline_container .marketum_tagline_socials a:hover {
+        color: #ff1e00;
+    }
+
+    body,
+    body .elementor-widget-text-editor {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        line-height: 1.9;
+        font-weight: 400;
+        color: #666666;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    body .elementor-widget-heading .elementor-heading-title,
+    .marketum_contacts_widget_email_title,
+    html :where(.editor-styles-wrapper) h1,
+    html :where(.editor-styles-wrapper) h2,
+    html :where(.editor-styles-wrapper) h3,
+    html :where(.editor-styles-wrapper) h4,
+    html :where(.editor-styles-wrapper) h5,
+    html :where(.editor-styles-wrapper) h6 {
+        font-family: Cambon, sans-serif;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        color: #222628;
+    }
+    
+    .marketum_sidebar_widget_title {
+        border-color: #222628;
+    }
+    
+    h1,
+    body .elementor-widget-heading h1.elementor-heading-title,
+    html :where(.editor-styles-wrapper) h1 {
+        font-size: 80px;
+        line-height: 1.6;
+    }
+    
+    h2,
+    body .elementor-widget-heading h2.elementor-heading-title,
+    html :where(.editor-styles-wrapper) h2 {
+        font-size: 50px;
+        line-height: 1.6;
+    }
+    
+    h3,
+    body .elementor-widget-heading h3.elementor-heading-title,
+    html :where(.editor-styles-wrapper) h3 {
+        font-size: 40px;
+        line-height: 1.6;
+    }
+    
+    h4,
+    body .elementor-widget-heading h4.elementor-heading-title,
+    .marketum_contacts_widget_email_title,
+    .marketum_sidebar .marketum_widget_wrapper h1,
+    .marketum_sidebar .marketum_widget_wrapper h2,
+    .marketum_sidebar .marketum_widget_wrapper h3,
+    html :where(.editor-styles-wrapper) h4 {
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    
+    h5,
+    body .elementor-widget-heading h5.elementor-heading-title,
+    html :where(.editor-styles-wrapper) h5 {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    
+    h6,
+    body .elementor-widget-heading h6.elementor-heading-title,
+    html :where(.editor-styles-wrapper) h6 {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    body .elementor-widget-accordion .elementor-tab-content {
+        font-family: Manrope, sans-serif;
+    }
+    
+    b, 
+    strong,
+    body .elementor-widget-counter .elementor-counter-title,
+    body .elementor-widget-image-box .elementor-image-box-title,
+    body .elementor-widget-image .widget-image-caption {
+        color: #222628;
+    }
+    
+    .marketum_portfolio_divider,
+    .marketum_best_offer_container div,
+    .marketum_price_border:before,
+    .marketum_services_slider_divider:before,
+    .marketum_work_steps_divider:before,
+    .marketum_work_steps_additional_divider:before,
+    .marketum_portfolio_listing_item_content_wrapper:before {
+        background: #222628;
+    }
+    
+    .marketum_cases_list_item_wrapper .marketum_overlay {
+        background: -webkit-linear-gradient(to top, transparent 0%, rgba(34,38,40, .8) 100%);
+        background: linear-gradient(to top, transparent 0%, rgba(34,38,40, .8) 100%);
+    }
+    
+    .item_3 .marketum_cases_list_item_wrapper .marketum_overlay,
+    .item_5 .marketum_cases_list_item_wrapper .marketum_overlay,
+    .item_7 .marketum_cases_list_item_wrapper .marketum_overlay,
+    .item_1 .marketum_cases_list_item_wrapper .marketum_cases_list_category,
+    .item_9 .marketum_cases_list_item_wrapper .marketum_cases_list_category {
+        background: #222628;
+    }
+    
+    .marketum_cases_list_item_wrapper .marketum_cases_list_category:hover {
+        background-color: #222628;
+    }
+
+    .marketum_page_title_container {
+        min-height: 482px;
+        background-color: #000000;
+        background-image: url("./assets/newTheme/images/page_title.jpg");
+    }
+    
+    .marketum-single-product-page .marketum_page_title_container {
+        background-color: #000000;
+        background-image: url("./assets/newTheme/images/product-title.jpg"); 
+    }
+    
+    .marketum_page_title {
+        font-family: Cambon, sans-serif;
+        font-size: 80px;
+        color: #ffffff;
+    }
+    
+    .marketum_page_subtitle {
+        font-family: Raph Lanok Future, sans-serif;
+        font-size: 150px;
+        color: #ff1e00;
+    }
+    
+    .marketum_page_promo_text {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .form__field,
+    body #give_checkout_user_info p input,
+    body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="text"],
+    body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="email"],
+    body .wp-block-search input[type="search"],
+    body input[type="password"],
+    body input[type="text"],
+    body input[type="tel"],
+    body input[type="email"],
+    body input[type="number"],
+    body input[type="date"],
+    body textarea,
+    body .form__message {
+        color: #000000;
+        background-color: #ffffff;
+        border-color: #c0c0b7;
+    }
+    
+    .form__field:focus,
+    body #give_checkout_user_info p input:focus,
+    body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="text"]:focus,
+    body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="email"]:focus,
+    body .wp-block-search input[type="search"]:focus,
+    body input[type="password"]:focus,
+    body input[type="text"]:focus,
+    body input[type="tel"]:focus,
+    body input[type="email"]:focus,
+    body input[type="number"]:focus,
+    body input[type="date"]:focus,
+    body textarea:focus,
+    body .form__message:focus {
+        border-color: #222628;
+    }
+
+        .form__field:focus,
+        body #give_checkout_user_info p input:focus,
+        body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="text"]:focus,
+        body form[id*=give-form] .give-donation-levels-wrap + fieldset + div p input[type="email"]:focus,
+        body .wp-block-search input[type="search"]:focus,
+        body input[type="password"]:focus,
+        body input[type="text"]:focus,
+        body input[type="tel"]:focus,
+        body input[type="email"]:focus,
+        body input[type="number"]:focus,
+        body input[type="date"]:focus,
+        body textarea:focus,
+        body .form__message:focus {
+            background-color: transparent;
+        }
+    
+    .marketum_footer_container {
+        background-color: #222628;
+    }
+    
+    .marketum_top_footer_wrapper {
+        color: #ffffff;
+    }
+    
+    .marketum_top_footer_socials li a:hover {
+        color: #e85442;
+    }
+    
+    .marketum_footer_wrapper {
+        color: #b7b7b7;
+    }
+    
+    .marketum_footer_wrapper a:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_prefooter_wrapper h1,
+    .marketum_prefooter_wrapper h2,
+    .marketum_prefooter_wrapper h3,
+    .marketum_prefooter_wrapper h4,
+    .marketum_prefooter_wrapper h5,
+    .marketum_prefooter_wrapper h6 {
+        color: #ffffff;
+    }
+    
+    .marketum_prefooter_wrapper {
+        color: #ffffff;
+    }
+    
+    .marketum_prefooter_wrapper a {
+        color: #ff1e00;
+    }
+    
+    .marketum_contacts_widget_phones a,
+    .marketum_address_widget_phones_container a {
+        color: #ffffff;
+    }
+    
+    .footer_widget.widget_nav_menu ul a:hover,
+    .marketum_prefooter_wrapper a:hover,
+    .marketum_contacts_widget_phones a:hover,
+    .marketum_address_widget_phones_container a:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_footer_socials a {
+        color: #ffffff;
+    }
+    
+    .marketum_footer_socials a:hover {
+        color: #ff1e00;
+    }
+
+    .marketum_button,
+    .marketum_side_panel_header_button {
+        font-family: Manrope, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        color: #282a43;
+    }
+    
+    body .wp-block-button__link {
+        font-family: Manrope, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+    }
+    
+    .marketum_button {
+        color: #282a43;
+        background: transparent;
+        border-color: #282a43;
+    }
+    
+    .marketum_button:hover {
+        color: #ffffff;
+        border-color: #282a43;
+    }
+    
+    .marketum_page_content_container a.marketum_button:before {
+        background: #282a43;
+    }
+    
+    .marketum_side_panel_header_button {
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #ff1e00;
+    }
+    
+    .marketum_side_panel_header_button:hover {
+        color: #ffffff;
+        border-color: #ff1e00;
+    }
+    
+    .marketum_side_panel_header_button:before {
+        background-color: #ff1e00;
+    }
+    
+    .marketum_post_socials a,
+    .marketum_portfolio_socials a {
+        color: #222628;
+        background: #e6e6e2;
+    }
+    
+    .marketum_post_socials a:hover,
+    .marketum_portfolio_socials a:hover {
+        color: #ff1e00;
+        background: #e6e6e2;
+    }
+    
+    .marketum_page_content_container a.marketum_link_type_2,
+    .marketum_personal_socials a,
+    .post-comment-buttons a,
+    .comment-respond .marketum_comment_button,
+    .woocommerce #review_form #respond .form-submit input {
+        color: #222628;
+    }
+    
+    .marketum_page_content_container a.marketum_link_type_2:hover,
+    .marketum_personal_socials a:hover,
+    .post-comment-buttons a:hover,
+    .comment-respond .marketum_comment_button:hover,
+    .woocommerce #review_form #respond .form-submit input:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_page_content_container a.marketum_link_type_2:after,
+    .marketum_page_content_container .post-comment-buttons a:after,
+    .comment-respond .marketum_comment_button:before,
+    .comment-respond .marketum_comment_button:after,
+    .woocommerce #review_form #respond .form-submit:after {
+        background-color: #222628;
+    }
+    
+    .marketum_page_content_container a.marketum_link_type_2:hover:after,
+    .marketum_page_content_container .post-comment-buttons a:hover:after,
+    .comment-respond .marketum_comment_button:hover:before,
+    .comment-respond .marketum_comment_button:hover:after,
+    .woocommerce #review_form #respond .form-submit:hover:after {
+        background-color: #ff1e00;
+    }
+
+    a,
+    a:hover,
+    .marketum_menu_notify a:hover,
+    .marketum_up_heading,
+    .marketum_heading span,
+    .marketum_sidebar .wp-block-search button[type="submit"]:hover,
+    .marketum_sidebar_widget_title span,
+    .recent_posts_post_meta,
+    .marketum_sidebar .widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev a:hover:before,
+    .marketum_sidebar .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next a:hover:after,
+    .footer_widget.widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev a:hover:before,
+    .footer_widget.widget_calendar .wp-calendar-nav span.wp-calendar-nav-next a:hover:after,
+    .wp-block-calendar .wp-calendar-nav span.wp-calendar-nav-prev a:hover:before,
+    .wp-block-calendar .wp-calendar-nav span.wp-calendar-nav-next a:hover:after,
+    .footer_widget.widget_categories ul li a:hover,
+    .footer_widget.widget_marketum_categories_widget ul li a:hover,
+    .footer_widget.widget_recent_entries ul li a:hover,
+    .footer_widget.widget_archive ul li a:hover,
+    .footer_widget.widget_pages ul li a:hover,
+    .footer_widget.widget_meta ul li a:hover,
+    .footer_widget.widget_recent_comments ul li a:hover,
+    .footer_widget.widget_product_categories ul li a:hover,
+    .footer_widget.widget_layered_nav ul li a:hover,
+    .footer_widget.widget_rating_filter ul li a:hover,
+    .marketum_post_tag_container ul a:hover,
+    .post-comment-author-container .post-comment-date,
+    .marketum_single_team_text_before_name,
+    .marketum_single_team_biography_subtitle,
+    .marketum_education_and_experience_subtitle,
+    .marketum_salary_container,
+    .marketum_recent_career_subtitle,
+    .marketum_careers_listing_salary_cont,
+    input[type="submit"]:hover,
+    .wp-block-search button[type="submit"]:hover,
+    body .elementor-widget-counter .elementor-counter-number-wrapper span,
+    body .elementor-widget-heading.marketum_slogan h2.elementor-heading-title span,
+    .marketum_video_trigger_button i,
+    .marketum_services_listing_counter,
+    .marketum_price_item .marketum_price_wrapper,
+    .marketum_services_slider_counter,
+    .marketum_work_steps_date,
+    .elementor-widget-wp-widget-search .search-form .search-form-icon:hover,
+    .marketum_download_doc_widget a .marketum_dd_description,
+    .view_type_type_2 .marketum_services_slider_title a:hover,
+    .view_type_type_2 .marketum_button_and_nav_container .marketum_link_type_2:hover,
+    .marketum_services_slider_widget_wrapper.view_type_type_3 .marketum_button_container a:hover,
+    .marketum_content_slider_wrapper .marketum_promo_video_container .marketum_video_trigger i,
+    .footer_widget .marketum_subscirbe input[type="submit"],
+    .marketum_header_cart_content_container .marketum_mini_cart_line_total,
+    .woocommerce ul.products li.product .marketum_prod_list_price_container,
+    .marketum_sidebar .wc-block-product-search button:hover,
+    .woocommerce .marketum_sidebar ul.product_list_widget li span.amount,
+    .woocommerce .marketum_single_product_page div.product p.price,
+    .woocommerce .marketum_single_product_page div.product span.price,
+    .marketum_single_product_page .product_meta span.posted_in a:hover,
+    .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta .woocommerce-review__published-date,
+    body .woocommerce table.shop_table tbody td.product-subtotal,
+    .woocommerce-checkout .woocommerce table.shop_table tbody td.product-total,
+    .woocommerce .outer-form-wrapper .form-attention .tab-columns-switcher,
+    .woocommerce-MyAccount-navigation ul li a:hover,
+    .marketum_menu_mobile_search:hover .icon,
+    .marketum_mobile_menu li.menu-item-has-children.current-menu-ancestor > a,
+    .marketum_mobile_menu li.current-menu-item > a,
+    .woocommerce nav.woocommerce-pagination ul li a:hover,
+    .marketum_content_slider_wrapper .marketum_additional_info a:hover,
+    .marketum_main_menu li ul.sub-menu > li:hover > a,
+    .marketum_main_menu li > ul.sub-menu > li > ul.sub-menu > li:hover > a,
+    .marketum_sidebar .widget.widget_recent_comments .wp-block-latest-comments__comment footer time,
+    .marketum_no_result_search_form .marketum_icon_search:hover,
+    .marketum_sidebar .widget_search .marketum_icon_search:hover {
+        color: #ff1e00;
+    }
+
+    ::selection,
+    .marketum_page_content_container a:before,
+    .marketum_page_content_container a:after,
+    .marketum_side_panel_info_item a:before,
+    .marketum_side_panel_info_item a:after,
+    .marketum_contacts_widget_email a:before,
+    .marketum_contacts_widget_email a:after,
+    .marketum_address_widget_item a:before,
+    .marketum_address_widget_item a:after,
+    .marketum_tagline_socials li:after,
+    .marketum_tagline_info:not(:last-of-type):after,
+    .marketum_header_search_close_button:hover:before,
+    .marketum_header_search_close_button:hover:after,
+    .marketum_dropdown_trigger:after,
+    .marketum_breadcrumbs_container .delimiter,
+    body .marketum_content_wrapper .elementor-widget-text-editor ul li:before,
+    body .marketum_content_wrapper .elementor-tab-content ul li:before,
+    .marketum_blockquote.marketum_view_type_2,
+    .marketum_blockquote_marker,
+    .marketum_sidebar .widget.widget_categories ul li:before,
+    .marketum_sidebar .widget.widget_pages ul li:before,
+    .marketum_sidebar .widget.widget_meta ul li:before,
+    .marketum_sidebar .widget.widget_recent_comments ul li:before,
+    .marketum_sidebar .widget_product_categories ul li:before,
+    .marketum_sidebar .widget_archive ul li:before,
+    .marketum_sidebar .widget_recent_entries ul li:before,
+    .marketum_sidebar .widget.widget_recent_comments ul li:before,
+    .marketum_sidebar .widget.widget_tag_cloud .tagcloud a:hover,
+    .footer_widget.widget_tag_cloud .tagcloud a:hover,
+    .marketum_sidebar .widget.widget_product_tag_cloud .tagcloud a:hover,
+    .wp-block-tag-cloud a:hover,
+    .marketum_standard_blog_listing .marketum_blog_listing_categories a:hover,
+    .widget_marketum_banner_widget .marketum_banner_wrapper,
+    .marketum_sidebar .widget_calendar table td a:after,
+    .wp-block-calendar table td a:after,
+    .footer_widget.widget_calendar table td a:after,
+    .marketum_post_cat_cont a,
+    .marketum_post_author_container .divider,
+    .marketum_post_tag_container ul a:hover:after,
+    .post-comment-author-container .divider,
+    .marketum_personal_skills li:before,
+    .marketum_personal_values li:before,
+    .marketum_exp_list_item:before,
+    .marketum_single_team_contacts_container:before,
+    .marketum_back_to_top_button,
+    .marketum_back_to_top_button:hover:before,
+    .marketum_top_footer_socials li a:before,
+    .marketum_top_footer_socials li a:after,
+    .footer_widget a:before,
+    .footer_widget a:after,
+    .marketum_career_occupation,
+    .marketum_career_content ul li:before,
+    .marketum_page_content_container .marketum_careers_listing_link_cont a.marketum_link_type_2:hover:before,
+    .marketum_page_content_container .marketum_careers_listing_link_cont a.marketum_link_type_2:hover:after,
+    .marketum_dropdown_trigger_hover,
+    .marketum_404_button:hover:before,
+    .marketum_404_button:hover:after,
+    .marketum_404_container .marketum_404_socials li a:before,
+    .marketum_404_container .marketum_404_socials li a:after,
+    .marketum_pagination .pagination span:before,
+    .marketum_pagination .pagination a:before,
+    .marketum_blog_listing_meta .marketum_separator,
+    .marketum_testimonials_navigation_container .marketum_separator span.current,
+    .marketum_blog_listing_item_divider:before,
+    .marketum_video_promo_text_wrapper,
+    .marketum_price_item .marketum_custom_fields_container .marketum_custom_field:before,
+    .marketum_page_content_container .marketum_price_item.marketum_type_horizontal a.marketum_button:before,
+    .elementor-widget-wp-widget-categories ul li:before,
+    .elementor-widget-wp-widget-marketum_categories_widget ul li:before,
+    .marketum_banner_widget_wrapper,
+    .marketum_cases_list_item_wrapper .marketum_cases_list_category,
+    .marketum_feedback_container:before,
+    .view_type_type_2 .marketum_button_and_nav_container .marketum_link_type_2:hover:before,
+    .view_type_type_2 .marketum_button_and_nav_container .marketum_link_type_2:hover:after,
+    .marketum_services_slider_widget_wrapper.view_type_type_3 .marketum_button_container a:hover:before,
+    .marketum_services_slider_widget_wrapper.view_type_type_3 .marketum_button_container a:hover:after,
+    .marketum_content_slider_wrapper .marketum_slider_counter .marketum_separator span.current,
+    .marketum_content_slider_wrapper .marketum_button,
+    .marketum_header_cart_container .marketum_cart-trigger__count,
+    .marketum_header_cart_content_container .remove_from_cart_button:before,
+    .marketum_header_cart_content_container .remove_from_cart_button:after,
+    .marketum_sidebar .wp-block-woocommerce-product-categories ul li:before,
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+    .woocommerce .widget_price_filter .price_slider_amount .button:hover,
+    .marketum_single_product_page .marketum_minus_button:hover:before,
+    .marketum_single_product_page .marketum_plus_button:hover:before,
+    .marketum_single_product_page .marketum_plus_button:hover:after,
+    .woocommerce table.shop_table tbody .quantity .marketum_minus_button:hover:before,
+    .woocommerce table.shop_table tbody .quantity .marketum_plus_button:hover:before,
+    .woocommerce table.shop_table tbody .quantity .marketum_plus_button:hover:after,
+    .woocommerce div.product form.cart .group_table td .marketum_minus_button:hover:before,
+    .woocommerce div.product form.cart .group_table td .marketum_plus_button:hover:before,
+    .woocommerce div.product form.cart .group_table td .marketum_plus_button:hover:after,
+    .marketum_single_product_page .product_meta span.tagged_as a:hover,
+    .woocommerce div.product .woocommerce-tabs .panel.woocommerce-Tabs-panel--description ul li:before,
+    .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta .woocommerce-review__published-date:before,
+    .woocommerce table.shop_table tbody .product-remove a:before,
+    .woocommerce table.shop_table tbody .product-remove a:after,
+    /*.woocommerce table.shop_table tbody td.actions .button:hover,*/
+    .woocommerce-page .cart-collaterals .wc-proceed-to-checkout .button:hover,
+    .woocommerce .return-to-shop .button:hover,
+    .woocommerce .woocommerce-message .button:hover,
+    .woocommerce .woocommerce-Message .button:hover,
+    body.woocommerce-page .cart-collaterals .wc-proceed-to-checkout .button,
+    body .woocommerce .woocommerce-MyAccount-content button.button:hover,
+    .woocommerce .outer-form-wrapper .form-attention .tab-columns-switcher:before,
+    .woocommerce .marketum_single_product_page div.product form.cart .button:after,
+    .woocommerce .outer-form-wrapper .form-attention .tab-columns-switcher:after,
+    body .woocommerce-MyAccount-content .edit:hover,
+    .marketum_menu_mobile_cart_button .marketum_cart-trigger__count,
+    .marketum_mobile_menu li.menu-item-has-children.current-menu-ancestor > a:after,
+    .marketum_mobile_menu li.current-menu-item > a:before,
+    .woocommerce nav.woocommerce-pagination ul li span:before,
+    .woocommerce nav.woocommerce-pagination ul li a:before,
+    .item_1 .marketum_cases_list_item_wrapper .marketum_cases_list_category:hover,
+    .item_9 .marketum_cases_list_item_wrapper .marketum_cases_list_category:hover,
+    .woocommerce table.shop_table tbody td.actions .button:before,
+    body.woocommerce-checkout .checkout_coupon .button:before,
+    .woocommerce #payment #place_order:before,
+    .woocommerce-page #payment #place_order:before,
+    .woocommerce .outer-form-wrapper .button:before,
+    .marketum_header_cart_content_container .woocommerce-mini-cart-buttons a:after,
+    .woocommerce .cart-collaterals .wc-proceed-to-checkout .button:hover,
+    .woocommerce-page .cart-collaterals .wc-proceed-to-checkout .button:hover,
+    .woocommerce .woocommerce-message a.button:after,
+    body .wp-block-button__link:hover,
+    .is-style-outline .wp-block-button__link:hover,
+    .wp-block-file__button:hover,
+    .post-password-form button:hover,
+    .marketum_main_menu li ul.sub-menu > li:hover > a:before,
+    .marketum_main_menu li > ul.sub-menu > li > ul.sub-menu > li:hover > a:before,
+    .marketum_sidebar .wp-block-page-list li:before,
+    .warketum_submit_button:before,
+    .warketum_submit_button:after,
+    .footer_widget .marketum_subscirbe .warketum_submit_button:before,
+    .footer_widget .marketum_subscirbe .warketum_submit_button:after {
+        background-color: #ff1e00;
+    }
+    
+    .marketum_back_to_top_button,
+    .marketum_back_to_top_button:hover:after,
+    .marketum_port_archive_dots a .marketum_archive_point,
+    .marketum_page_content_container a.marketum_career_additional_link:hover,
+    .marketum_pagination .pagination .next:hover,
+    .marketum_pagination .pagination .prev:hover,
+    .marketum_price_item.marketum_type_horizontal .marketum_button,
+    .marketum_content_slider_wrapper .marketum_button,
+    .footer_widget .marketum_subscirbe input[type="submit"],
+    body .marketum_header_cart_content_container .woocommerce-mini-cart-buttons a,
+    body.woocommerce .widget_price_filter .price_slider_amount .button,
+    body.woocommerce .widget_price_filter .price_slider_amount .button:hover,
+    body.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+    body .woocommerce table.shop_table tbody td.actions .button,
+    body.woocommerce-page .cart-collaterals .wc-proceed-to-checkout .button,
+    body.woocommerce-checkout .checkout_coupon .button,
+    body.woocommerce #payment #place_order,
+    body.woocommerce-page #payment #place_order,
+    body.woocommerce .return-to-shop .button,
+    body.woocommerce .woocommerce-message .button,
+    body.woocommerce .woocommerce-Message .button,
+    body .woocommerce .woocommerce-MyAccount-content button.button,
+    body .woocommerce .woocommerce-form-login .button,
+    body .woocommerce .woocommerce-form-register .button,
+    body .woocommerce .lost_reset_password .button,
+    body .woocommerce .woocommerce-message .button, 
+    body .woocommerce .woocommerce-Message .button,
+    body .woocommerce-MyAccount-content .edit,
+    body.woocommerce .marketum_single_product_page div.product form.cart .button,
+    .is-style-outline .wp-block-button__link:hover,
+    .bypostauthor .post-comment-item .post-comment-avatar {
+        border-color: #ff1e00;
+    }
+    
+    .item_1 .marketum_cases_list_item_wrapper .marketum_overlay,
+    .item_9 .marketum_cases_list_item_wrapper .marketum_overlay {
+        background: #ff1e00;
+    }
+
+    .marketum_sidebar .widget.widget_categories ul li a,
+    .marketum_sidebar .widget.widget_recent_entries ul li a,
+    .marketum_sidebar .widget.widget_archive ul li a,
+    .marketum_sidebar .widget.widget_pages ul li a,
+    .marketum_sidebar .widget.widget_meta ul li a,
+    .marketum_sidebar .widget.widget_recent_comments ul li a,
+    .marketum_sidebar .widget.widget_rss .widget_title a,
+    .marketum_sidebar .widget.widget_rss ul li a,
+    .marketum_sidebar .widget.widget_nav_menu ul li a,
+    .marketum_sidebar .widget.widget_layered_nav ul li a,
+    .marketum_sidebar .widget.widget_rating_filter ul li a,
+    .marketum_sidebar .widget_calendar table a,
+    .wp-block-archives-list li a,
+    .wp-block-latest-posts li a,
+    .wp-block-rss li a,
+    .marketum_sidebar .recent-posts__item-link,
+    .marketum_sidebar .widget.widget_tag_cloud .tagcloud a,
+    .footer_widget.widget_tag_cloud .tagcloud a,
+    .marketum_sidebar .widget.widget_product_tag_cloud .tagcloud a,
+    .wp-block-tag-cloud a,
+    .marketum_standard_blog_listing .marketum_blog_listing_categories a,
+    .marketum_sidebar .recent-posts__item-link,
+    .marketum_post_tag_container ul a,
+    .post-comment-author,
+    .marketum_portfolio_meta_container,
+    .marketum_port_navigation_header > div,
+    .marketum_port_nav_text_wrapper a,
+    .marketum_page_content_container a.marketum_career_additional_link,
+    .marketum_page_content_container a.marketum_career_additional_link:hover,
+    .marketum_blog_listing_title a,
+    .marketum_pagination .pagination a,
+    .marketum_team_item_title a,
+    .marketum_services_listing_title a,
+    body .elementor-widget-accordion .elementor-accordion .elementor-tab-title span,
+    body .elementor-widget-toggle .elementor-toggle .elementor-tab-title span,
+    body .elementor-widget-accordion .elementor-accordion .elementor-tab-title a,
+    body .elementor-widget-toggle .elementor-toggle .elementor-tab-title a,
+    .marketum_services_slider_title a,
+    .elementor-widget-wp-widget-categories ul li a,
+    .elementor-widget-wp-widget-marketum_categories_widget ul li a,
+    .marketum_download_doc_widget a .marketum_dd_title,
+    .marketum_portfolio_listing_title a,
+    .woocommerce .marketum_header_cart_content_container .woocommerce-mini-cart-item__title a,
+    .marketum_header_cart_content_container .woocommerce-mini-cart-total .woocommerce-Price-amount,
+    .marketum_header_cart_content_container .woocommerce-mini-cart-buttons a,
+    .woocommerce ul.products li.product .marketum_prod_list_title a,
+    .marketum_sidebar .wp-block-woocommerce-product-categories ul li a,
+    .woocommerce ul.product_list_widget li a,
+    .woocommerce div.product .woocommerce-tabs ul.tabs li,
+    .woocommerce table.shop_table tbody td.product-name a,
+    .woocommerce nav.woocommerce-pagination ul li a,
+    .woocommerce table.shop_table_responsive tr td::before,
+    .woocommerce-page table.shop_table_responsive tr td::before,
+    .woocommerce ul.products li.product .button,
+    .marketum_sidebar .widget.widget_recent_comments .wp-block-latest-comments__comment footer a,
+    .marketum_sidebar .wp-block-page-list li a,
+    .marketum_menu_mobile_inner .marketum_side_panel_info_item.marketum_side_panel_phone_1 a,
+    .marketum_menu_mobile_inner .marketum_side_panel_info_item.marketum_side_panel_phone_2 a,
+    .marketum_contacts_wrapper p span a {
+        color: #222628;
+    }
+    
+    .marketum_sidebar .widget.widget_categories ul li a:hover,
+    .marketum_sidebar .widget.widget_recent_entries ul li a:hover,
+    .marketum_sidebar .widget.widget_archive ul li a:hover,
+    .marketum_sidebar .widget.widget_pages ul li a:hover,
+    .marketum_sidebar .widget.widget_meta ul li a:hover,
+    .marketum_sidebar .widget.widget_recent_comments ul li a:hover,
+    .marketum_sidebar .widget.widget_rss .widget_title a:hover,
+    .marketum_sidebar .widget.widget_rss ul li a:hover,
+    .marketum_sidebar .widget.widget_nav_menu ul li a:hover,
+    .marketum_sidebar .widget.widget_layered_nav ul li a:hover,
+    .marketum_sidebar .widget.widget_rating_filter ul li a:hover,
+    .marketum_sidebar .widget_calendar table a:hover,
+    .wp-block-archives-list li a:hover,
+    .wp-block-latest-posts li a:hover,
+    .wp-block-rss li a:hover,
+    .marketum_sidebar .recent-posts__item-link:hover,
+    .marketum_port_nav_text_wrapper a:hover,
+    .marketum_blog_listing_title a:hover,
+    .marketum_pagination .pagination a:hover,
+    .marketum_team_item_title a:hover,
+    .marketum_services_listing_title a:hover,
+    body .elementor-accordion .elementor-tab-title.elementor-active span.elementor-accordion-icon-opened,
+    .marketum_services_slider_title a:hover,
+    .elementor-widget-wp-widget-categories ul li a:hover,
+    .elementor-widget-wp-widget-marketum_categories_widget ul li a:hover,
+    .marketum_download_doc_widget a:hover,
+    .marketum_portfolio_listing_item_wrapper:hover .marketum_portfolio_listing_title a:hover,
+    body .gallery-masonry__description a:hover,
+    .woocommerce .marketum_header_cart_content_container .woocommerce-mini-cart-item__title a:hover,
+    .woocommerce ul.products li.product .marketum_prod_list_title a:hover,
+    .marketum_sidebar .wp-block-woocommerce-product-categories ul li a:hover,
+    .woocommerce ul.product_list_widget li a:hover,
+    .woocommerce table.shop_table tbody td.product-name a:hover,
+    .woocommerce .marketum_single_product_page div.product form.cart .button,
+    .marketum_sidebar .widget.widget_recent_comments .wp-block-latest-comments__comment footer a:hover,
+    .marketum_sidebar .wp-block-page-list li a:hover,
+    .marketum_menu_mobile_inner .marketum_side_panel_info_item.marketum_side_panel_phone_1 a:hover,
+    .marketum_menu_mobile_inner .marketum_side_panel_info_item.marketum_side_panel_phone_2 a:hover,
+    .marketum_contacts_wrapper p span a:hover {
+        color: #ff1e00;
+    }
+    
+    .marketum_sidebar .widget.widget_tag_cloud .tagcloud a:after,
+    .footer_widget.widget_tag_cloud .tagcloud a:after,
+    .marketum_sidebar .widget.widget_product_tag_cloud .tagcloud a:after,
+    .wp-block-tag-cloud a:after,
+    .marketum_standard_blog_listing .marketum_blog_listing_categories a:after,
+    .marketum_post_tag_container ul a:after,
+    .marketum_blog_listing_item_divider,
+    .marketum_pagination .pagination span:after,
+    .marketum_pagination .pagination a:after,
+    .woocommerce nav.woocommerce-pagination ul li a:after,
+    body .elementor-widget-shortcode #sb_instagram .sbi_photo:before,
+    .marketum_post_cat_cont a:hover,
+    .woocommerce-page .cart-collaterals .wc-proceed-to-checkout .button:before,
+    .gallery-masonry__description,
+    .post-password-form button {
+        background-color: #222628;
+    }
+    
+    .marketum_port_archive_dots a:hover .marketum_archive_point,
+    .marketum_page_content_container a.marketum_career_additional_link {
+        border-color: #222628;
+    }
+
+    html :where(.editor-styles-wrapper) {
+        font-family: Manrope, sans-serif;
+        font-size: 16px;
+        line-height: 1.9;
+        font-weight: 400;
+        color: #666666;
+    }
+
+    .wp-block-post-title {
+        font-family: Cambon, sans-serif;
+        font-size: 80px;
+        color: #ffffff;
+    }
+    
+    .edit-post-visual-editor__post-title-wrapper {
+        background-color: #000000;
+        background-image: url("./assets/newTheme/images/page_title.jpg");
+    }
+    
+    .wp-block-freeform.block-library-rich-text__tinymce a {
+        color: #ff1e00;
+    }
+    
+    .wp-block-archives-list li a {
+        color: #222628;
+    }
+    
+    .tag-cloud-link:after {
+        background-color: #222628;
+    }
+    
+    body .wp-block-search input[type="search"] {
+        color: #000000;
+        background-color: #ffffff;
+        border-color: #c0c0b7;
+    }
+
+</style>
+<link rel='stylesheet' id='elementor-icons-css'  href='./assets/newTheme/css/elementor-icons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='./assets/newTheme/css/' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='./assets/newTheme/css/custom-frontend-legacy.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='./assets/newTheme/css/custom-frontend-lite.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='marketum_styles-css'  href='./assets/newTheme/css/marketum_plugin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox_styles-css'  href='./assets/newTheme/css/jquery.fancybox.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='irslider_styles-css'  href='./assets/newTheme/css/ion.rangeSlider.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='./assets/newTheme/css/global.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-217-css'  href='./assets/newTheme/css/post-217.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.0.8' type='text/css' media='all' />
+<script type='text/javascript' src='./assets/newTheme/js/jquery.min.js' id='jquery-core-js'></script>
 
 
+		<style type="text/css" id="wp-custom-css">
+			@@media only screen and (min-width: 1025px) {
+	.page-id-4355 .marketum_header_inner_container {
+	box-shadow: none;
+}
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet">
-    @* <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css" rel="stylesheet" /> *@
+.page-id-4355 .marketum_header_bg_overlay {
+	background-color: transparent;
+}
 
+.page-id-4355 .marketum_sticky_header_inner_container {
+	box-shadow: 0 15px 38px rgb(0 0 0 / 10%);
+}
+}		</style>
+		    </head>
 
-    <!-- Template Stylesheet -->
-    <link href="~/assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Fortunaweg 4, 3113 AN Schiedam, Netherlands</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - sat : 09.00 AM - 06.00 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+31 6 84737499</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    @if (check)
-                    {
-                        <p>Welcome: <b>@User.Identity.Name</b> </p>
-                       
-                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
-                            <button type="submit" class="btn btn-primary py-4 btn-sm">Logout</button>
-                        </form>
-                    }
-                    else
-                    {
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                        
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-car me-3"></i>Auto Arts</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a asp-area="" asp-action="Index" asp-controller="Home" class="nav-item nav-link active">Home</a>
-                <a asp-area=""  asp-action="Service" asp-controller="Home" class="nav-item nav-link">Services</a>
-                <a asp-area=""  asp-action="Index" asp-controller="Booking" class="nav-item nav-link">Booking</a>
-                <a asp-area="" asp-action="About" asp-controller="Home" class="nav-item nav-link">About</a>
-          
-                <a asp-action="Contact" class="nav-item nav-link">Contact</a>
+    <!-- Body -->
+    <body class="home page-template-default page page-id-217 theme-marketum woocommerce-no-js elementor-default elementor-kit-94 elementor-page elementor-page-217">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+        <!-- Preloader -->
+                    <div class="marketum_preloader_container">
+                <div class="marketum_preloader_logo"></div>
             </div>
             
+        <!-- Header Search -->
+        
+            <div class="marketum_header_search_overlay"></div>
+
+            <div class="marketum_header_search_container">
+                <form name="header_search_form" method="get" action="./" class="marketum_search_form" id="search-115">
+                    <input type="text" name="s" value="" placeholder="Search" title="Search the site..." class="form__field">
+                    <div class="clear"></div>
+                    <div class="marketum_header_search_close_button"></div>
+                </form>
+            </div>
+            
+        <div class="marketum_page_wrapper">
+
+            
+<div class="marketum_aside_dropdown">
+    <div class="marketum_aside_dropdown_inner">
+        <div class="marketum_aside_dropdown_close"></div>
+
+                    <a class="marketum_side_panel_logo" href="./"></a>
+                        <div class="marketum_side_panel_promo">Wanneer je vragen hebt over je auto 
+                            wij hebben het meeste verstand van jouw auto en helpen je graag. 
+                            Voor al je vragen over de producten, diensten en onderhoud</div>
+                            <div class="marketum_side_panel_info_container">
+                    <h4 class="marketum_side_panel_info_title">Wij helpen je graag</h4>
+
+                                            <div class="marketum_side_panel_info_item marketum_side_panel_address">
+                                                Fortunaweg 4, 3113 AN Schiedam 
+View, CA 94041USA                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_1">
+                            <a href="tel:+31684737499">
+                                +31 684 73 7499                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_2">
+                            <a href="tel:+31614887569">
+                                +31 614 88 7569                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_email">
+                            <a href="info@artsauto.nl">info@artsauto.nl</a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_map">
+                            <svg class="icon">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C153.755 0 70.573 83.182 70.573 185.426c0 126.888 165.939 313.167 173.004 321.035 6.636 7.391 18.222 7.378 24.846 0 7.065-7.868 173.004-194.147 173.004-321.035C441.425 83.182 358.244 0 256 0zm0 469.729c-55.847-66.338-152.035-197.217-152.035-284.301 0-83.834 68.202-152.036 152.035-152.036s152.035 68.202 152.035 152.035C408.034 272.515 311.861 403.37 256 469.729z"></path><path d="M256 92.134c-51.442 0-93.292 41.851-93.292 93.293S204.559 278.72 256 278.72s93.291-41.851 93.291-93.293S307.441 92.134 256 92.134zm0 153.194c-33.03 0-59.9-26.871-59.9-59.901s26.871-59.901 59.9-59.901 59.9 26.871 59.9 59.901-26.871 59.901-59.9 59.901z"></path></svg>
+                            </svg>
+
+                            <a href="#">Vind ons op de maps</a>
+                        </div>
+                                        </div>
+                            <div class="marketum_side_panel_socials_container">
+                
+                <h4 class="marketum_side_panel_socials_title">Volg ons</h4>
+            <ul class="marketum_side_panel_socials">
+                    <li>
+                        <a class="hs_facebook" href="https://www.facebook.com/HuisartAuto" target="_self">Fb
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_twitter" href="https://www.tiktok.com/@@huisartsauto?_t=8n5VEqb4wAT&_r=1" target="_self">TT
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_linkedin" href="" target="_self">
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_instagram" href="https://www.instagram.com" target="_self">Ig
+                        </a>
+                    </li>
+                </ul>            </div>
+                        <div class="marketum_side_panel_header_button_container">
+                                    <a class="marketum_side_panel_header_button" href="#"><span>Neem contact op</span></a>
+                                </div>
+                </div>
+</div>
+
+            <header class="marketum_header_type_1 marketum_sticky_header_on marketum_transparent_header_off marketum_header_button_on marketum_side_panel_on">
+                
+<div class="marketum_tagline_container view_type_1">
+            <div class="marketum_tagline_socials_container">
+            <ul class="marketum_tagline_socials">
+                    <li>
+                        <a class="hs_facebook" href="https://www.facebook.com/HuisartAuto" target="_self">Facebook
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_twitter" href="https://maps.app.goo.gl/kYec7Dah4sgPnKgn7?g_st=ic" target="_self">Maps
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_linkedin" href="https://www.tiktok.com/@@huisartsauto?_t=8n5VEqb4wAT&_r=1" target="_self">Tiktok
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_instagram" href="https://www.instagram.com/huisartsauto?igsh=MW42NmV5YnB3M3A0bQ%3D%3D&utm_source=qr" target="_self">Instagram
+                        </a>
+                    </li>
+                </ul>        </div>
+                <div class="marketum_tagline_info_container">
+                            <div class="marketum_tagline_info marketum_tagline_phone">
+                    <span class="marketum_tagline_info_title">Vragen?</span>
+                    <a class="marketum_tagline_link" href="tel:+31-684737499">+ 31 - 68 73 74 99</a>
+                </div>
+                                <div class="marketum_tagline_info marketum_tagline_email">
+                    <span class="marketum_tagline_info_title"></span>
+                    <a class="marketum_top_bar_link" href="mailto:marketum@mail.com">info@artsaut.nl</a>
+                </div>
+                        </div>
         </div>
-    </nav>
+
+<div class="marketum_header_inner_container">
+    <div class="marketum_header_bg_overlay"></div>
+
+    <div class="marketum_header_logo_container">
+                    <div class="marketum_side_panel_button">
+                <div class="marketum_dropdown_trigger">
+                    <div class="marketum_dropdown_trigger_hover"></div>
+                </div>
+            </div>
+            
+        <div class="marketum_logo_box">
+            <a class="marketum_logo marketum_retina_on" href="./"></a>
+        </div>
+    </div>
+
+    <div class="marketum_header_menu_container">
+                        <div class="marketum_main_menu_container">
+                    <ul id="menu-main-menu" class="marketum_main_menu">
+                       
+
+
+                        <li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="#">Home</a></li>
+<li  class="menu-item menu-item-type-post_type menu-item-object-page "><a href="./booking/">Afspraak maken</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="./contacts/">Klantenservice</a></li>
+</ul>                </div>
+                    </div>
+
+    <div class="marketum_header_buttons_container">
+                    
+                            <a class="marketum_header_button" href="#">APK 39.99</a>
+                
+        <div class="marketum_hamburger_container">
+            <div class="marketum_hamburger marketum_menu_trigger">
+                <div class="marketum_hamburger_inner"></div>
+            </div>
+        </div>
+
+            <div class="marketum_menu_mobile_container">
+        <div class="marketum_menu_mobile_inner">
+
+            <!-- Buttons Section -->
+            <div class="marketum_menu_mobile_buttons_container">
+                                    <div class="marketum_menu_mobile_search">
+                        <svg class="icon">
+                            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.19 0a8.19 8.19 0 016.47 13.212l5.04 5.04a1.024 1.024 0 11-1.448 1.448l-5.04-5.04A8.19 8.19 0 118.19 0zm0 2.048a6.143 6.143 0 100 12.285 6.143 6.143 0 000-12.285z"/></svg>
+                        </svg>
+                    </div>
+                    
+                <div class="marketum_menu_mobile_close"></div>
+            </div>
+
+            <!-- Menu Section -->
+            <div class="marketum_menu_mobile_wrapper">
+                <ul id="menu-main-menu-1" class="marketum_mobile_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-229"><a href="#">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-217 current_page_item menu-item-250"><a href="./" aria-current="page">Digital Marketing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="./seo-agency/">SEO Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="./creative-studio/">Creative Studio</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4430"><a href="./social-media/">Social Media</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431"><a href="./creative-advertising/">Creative Advertising</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="./business-solutions/">Business Solutions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4433"><a href="./intro/">Intro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-230"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a href="./about/">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="./typography/">Typography</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-261"><a href="#">Team</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="./awesome-team/">Team</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_team menu-item-266"><a href="./team/alan-macdonald/">Team Member</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-262"><a href="#">Services</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="./my-services/">Services</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="./services-2/">Services 2</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-336"><a href="./services/service-details/">Service Details</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-335"><a href="./services/service-details-2/">Service Details 2</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-263"><a href="#">Careers</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-538"><a href="./careers/">Careers</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_career menu-item-337"><a href="./career/lead-product-designer/">Career Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260"><a href="#">Case Studies</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550"><a href="./case-studies/">Case Studies</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_cases menu-item-265"><a href="./cases/case-study-details/">Case Study Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="./pricing-plans/">Pricing Plans</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-264"><a href="#">Gallery</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="./gallery-masonry/">Gallery Masonry</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553"><a href="./gallery-grid/">Gallery Grid</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_gallery menu-item-311"><a href="./gallery/creative-solutions-for-your-business/">Gallery Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a href="./f-a-q/">F.A.Q.</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-552"><a href="./error404">404 Error</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-231"><a href="#">Projects</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="./projects/">Projects</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-marketum_portfolio menu-item-592"><a href="./portfolio/creative-solutions-for-oil-company/">Project Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-232"><a href="#">Shop</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680"><a href="./shop/">Product list</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-695"><a href="./product/orange-pack-design/">Single Product</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681"><a href="./cart/">Cart</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="./checkout/">Checkout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="./my-account/">My account</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-233"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="./blog-grid/">Blog Grid</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-593"><a href="./blog-classic/">Blog Classic</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="./blog-creative/">Blog Creative</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-597"><a href="./2020/09/04/blog-classic/">Blog Post</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="./contacts/">Contacts</a></li>
+</ul>            </div>
+
+                            <div class="marketum_side_panel_info_container">
+                    <h4 class="marketum_side_panel_info_title">Vragen</h4>
+
+                                            <div class="marketum_side_panel_info_item marketum_side_panel_address">
+                            523 Sylvan Ave, 5th Floor Mountain 
+View, CA 94041USA                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_1">
+                            <a href="tel:+12347198948">
+                                +1 234 719 8948                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_2">
+                            <a href="tel:+19876543210">
+                                +1 987 654 3210                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_email">
+                            <a href="mailto:support@marketum.com">support@marketum.com</a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_map">
+                            <svg class="icon">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C153.755 0 70.573 83.182 70.573 185.426c0 126.888 165.939 313.167 173.004 321.035 6.636 7.391 18.222 7.378 24.846 0 7.065-7.868 173.004-194.147 173.004-321.035C441.425 83.182 358.244 0 256 0zm0 469.729c-55.847-66.338-152.035-197.217-152.035-284.301 0-83.834 68.202-152.036 152.035-152.036s152.035 68.202 152.035 152.035C408.034 272.515 311.861 403.37 256 469.729z"></path><path d="M256 92.134c-51.442 0-93.292 41.851-93.292 93.293S204.559 278.72 256 278.72s93.291-41.851 93.291-93.293S307.441 92.134 256 92.134zm0 153.194c-33.03 0-59.9-26.871-59.9-59.901s26.871-59.901 59.9-59.901 59.9 26.871 59.9 59.901-26.871 59.901-59.9 59.901z"></path></svg>
+                            </svg>
+
+                            <a href="#">See on the map</a>
+                        </div>
+                                        </div>
+                                <div class="marketum_side_panel_socials_container">
+                    
+                <h4 class="marketum_side_panel_socials_title">Follow us</h4>
+            <ul class="marketum_side_panel_socials">
+                    <li>
+                        <a class="hs_facebook" href="https://www.facebook.com" target="_self">Fb
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_twitter" href="https://twitter.com" target="_self">Tw
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_linkedin" href="https://www.linkedin.com" target="_self">In
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_instagram" href="https://www.instagram.com" target="_self">Ig
+                        </a>
+                    </li>
+                </ul>                </div>
+                                <div class="marketum_side_panel_header_button_container">
+                                            <a class="marketum_side_panel_header_button" href="#"><span>Get in Touch</span></a>
+                                        </div>
+                        </div>
+    </div>    </div>
+</div>
+            </header>
+
+                            <header class="marketum_header_type_1 marketum_sticky_header_container marketum_header_button_on marketum_side_panel_on">
+                    <div class="marketum_sticky_header_inner_container">
+                        
+<div class="marketum_header_inner_container">
+    <div class="marketum_header_bg_overlay"></div>
+
+    <div class="marketum_header_logo_container">
+                    <div class="marketum_side_panel_button">
+                <div class="marketum_dropdown_trigger">
+                    <div class="marketum_dropdown_trigger_hover"></div>
+                </div>
+            </div>
+            
+        <div class="marketum_logo_box">
+            <a class="marketum_logo marketum_retina_on" href="./"></a>
+        </div>
+    </div>
+
+    <div class="marketum_header_menu_container">
+                        <div class="marketum_main_menu_container">
+                    <ul id="menu-main-menu-2" class="marketum_main_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-229"><a href="#">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-217 current_page_item menu-item-250"><a href="./" aria-current="page">Digital Marketing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="./seo-agency/">SEO Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="./creative-studio/">Creative Studio</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4430"><a href="./social-media/">Social Media</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431"><a href="./creative-advertising/">Creative Advertising</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="./business-solutions/">Business Solutions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4433"><a href="./intro/">Intro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-230"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a href="./about/">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="./typography/">Typography</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-261"><a href="#">Team</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="./awesome-team/">Team</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_team menu-item-266"><a href="./team/alan-macdonald/">Team Member</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-262"><a href="#">Services</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="./my-services/">Services</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="./services-2/">Services 2</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-336"><a href="./services/service-details/">Service Details</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-335"><a href="./services/service-details-2/">Service Details 2</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-263"><a href="#">Careers</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-538"><a href="./careers/">Careers</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_career menu-item-337"><a href="./career/lead-product-designer/">Career Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260"><a href="#">Case Studies</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550"><a href="./case-studies/">Case Studies</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_cases menu-item-265"><a href="./cases/case-study-details/">Case Study Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="./pricing-plans/">Pricing Plans</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-264"><a href="#">Gallery</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="./gallery-masonry/">Gallery Masonry</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553"><a href="./gallery-grid/">Gallery Grid</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_gallery menu-item-311"><a href="./gallery/creative-solutions-for-your-business/">Gallery Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a href="./f-a-q/">F.A.Q.</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-552"><a href="./error404">404 Error</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-231"><a href="#">Projects</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="./projects/">Projects</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-marketum_portfolio menu-item-592"><a href="./portfolio/creative-solutions-for-oil-company/">Project Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-232"><a href="#">Shop</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680"><a href="./shop/">Product list</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-695"><a href="./product/orange-pack-design/">Single Product</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681"><a href="./cart/">Cart</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="./checkout/">Checkout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="./my-account/">My account</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-233"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="./blog-grid/">Blog Grid</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-593"><a href="./blog-classic/">Blog Classic</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="./blog-creative/">Blog Creative</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-597"><a href="./2020/09/04/blog-classic/">Blog Post</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="./contacts/">Contacts</a></li>
+</ul>                </div>
+                    </div>
+
+    <div class="marketum_header_buttons_container">
+                    <div class="marketum_header_search_button">
+                <svg class="icon">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.19 0a8.19 8.19 0 016.47 13.212l5.04 5.04a1.024 1.024 0 11-1.448 1.448l-5.04-5.04A8.19 8.19 0 118.19 0zm0 2.048a6.143 6.143 0 100 12.285 6.143 6.143 0 000-12.285z"/></svg>
+                </svg>
+            </div>
+                            <a class="marketum_header_button" href="#">Get in Touch</a>
+                
+        <div class="marketum_hamburger_container">
+            <div class="marketum_hamburger marketum_menu_trigger">
+                <div class="marketum_hamburger_inner"></div>
+            </div>
+        </div>
+
+            <div class="marketum_menu_mobile_container">
+        <div class="marketum_menu_mobile_inner">
+
+            <!-- Buttons Section -->
+            <div class="marketum_menu_mobile_buttons_container">
+                                    <div class="marketum_menu_mobile_search">
+                        <svg class="icon">
+                            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.19 0a8.19 8.19 0 016.47 13.212l5.04 5.04a1.024 1.024 0 11-1.448 1.448l-5.04-5.04A8.19 8.19 0 118.19 0zm0 2.048a6.143 6.143 0 100 12.285 6.143 6.143 0 000-12.285z"/></svg>
+                        </svg>
+                    </div>
+                    
+                <div class="marketum_menu_mobile_close"></div>
+            </div>
+
+            <!-- Menu Section -->
+            <div class="marketum_menu_mobile_wrapper">
+                <ul id="menu-main-menu-3" class="marketum_mobile_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-229"><a href="#">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-217 current_page_item menu-item-250"><a href="./" aria-current="page">Digital Marketing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="./seo-agency/">SEO Agency</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="./creative-studio/">Creative Studio</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4430"><a href="./social-media/">Social Media</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431"><a href="./creative-advertising/">Creative Advertising</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="./business-solutions/">Business Solutions</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4433"><a href="./intro/">Intro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-230"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a href="./about/">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="./typography/">Typography</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-261"><a href="#">Team</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="./awesome-team/">Team</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_team menu-item-266"><a href="./team/alan-macdonald/">Team Member</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-262"><a href="#">Services</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="./my-services/">Services</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-521"><a href="./services-2/">Services 2</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-336"><a href="./services/service-details/">Service Details</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_services menu-item-335"><a href="./services/service-details-2/">Service Details 2</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-263"><a href="#">Careers</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-538"><a href="./careers/">Careers</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_career menu-item-337"><a href="./career/lead-product-designer/">Career Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260"><a href="#">Case Studies</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550"><a href="./case-studies/">Case Studies</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_cases menu-item-265"><a href="./cases/case-study-details/">Case Study Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="./pricing-plans/">Pricing Plans</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-264"><a href="#">Gallery</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="./gallery-masonry/">Gallery Masonry</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553"><a href="./gallery-grid/">Gallery Grid</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-marketum_gallery menu-item-311"><a href="./gallery/creative-solutions-for-your-business/">Gallery Details</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551"><a href="./f-a-q/">F.A.Q.</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-552"><a href="./error404">404 Error</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-231"><a href="#">Projects</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="./projects/">Projects</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-marketum_portfolio menu-item-592"><a href="./portfolio/creative-solutions-for-oil-company/">Project Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-232"><a href="#">Shop</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680"><a href="./shop/">Product list</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-695"><a href="./product/orange-pack-design/">Single Product</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681"><a href="./cart/">Cart</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="./checkout/">Checkout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683"><a href="./my-account/">My account</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-233"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="./blog-grid/">Blog Grid</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-593"><a href="./blog-classic/">Blog Classic</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a href="./blog-creative/">Blog Creative</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-597"><a href="./2020/09/04/blog-classic/">Blog Post</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="./contacts/">Contacts</a></li>
+</ul>            </div>
+
+                            <div class="marketum_side_panel_info_container">
+                    <h4 class="marketum_side_panel_info_title">Contact Information</h4>
+
+                                            <div class="marketum_side_panel_info_item marketum_side_panel_address">
+                                                Fortunaweg 4,  
+                                                3113 AN Schiedam                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_1">
+                            <a href="tel:+12347198948">
+                                +31 684 7374 99                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_phone_2">
+                            <a href="tel:+19876543210">
+                                +31 614 8875 69                            </a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_email">
+                            <a href="mailto:support@marketum.com">info@artsauto.nl</a>
+                        </div>
+                                                <div class="marketum_side_panel_info_item marketum_side_panel_map">
+                            <svg class="icon">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C153.755 0 70.573 83.182 70.573 185.426c0 126.888 165.939 313.167 173.004 321.035 6.636 7.391 18.222 7.378 24.846 0 7.065-7.868 173.004-194.147 173.004-321.035C441.425 83.182 358.244 0 256 0zm0 469.729c-55.847-66.338-152.035-197.217-152.035-284.301 0-83.834 68.202-152.036 152.035-152.036s152.035 68.202 152.035 152.035C408.034 272.515 311.861 403.37 256 469.729z"></path><path d="M256 92.134c-51.442 0-93.292 41.851-93.292 93.293S204.559 278.72 256 278.72s93.291-41.851 93.291-93.293S307.441 92.134 256 92.134zm0 153.194c-33.03 0-59.9-26.871-59.9-59.901s26.871-59.901 59.9-59.901 59.9 26.871 59.9 59.901-26.871 59.901-59.9 59.901z"></path></svg>
+                            </svg>
+
+                            <a href="#">See on the map</a>
+                        </div>
+                                        </div>
+                                <div class="marketum_side_panel_socials_container">
+                    
+                <h4 class="marketum_side_panel_socials_title">Follow us</h4>
+            <ul class="marketum_side_panel_socials">
+                    <li>
+                        <a class="hs_facebook" href="https://www.facebook.com" target="_self">Fb
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_twitter" href="https://twitter.com" target="_self">Tw
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_linkedin" href="https://www.linkedin.com" target="_self">In
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_instagram" href="https://www.instagram.com" target="_self">Ig
+                        </a>
+                    </li>
+                </ul>                </div>
+                                <div class="marketum_side_panel_header_button_container">
+                                            <a class="marketum_side_panel_header_button" href="#"><span>Get in Touch</span></a>
+                                        </div>
+                        </div>
+    </div>    </div>
+</div>
+                    </div>
+                </header>
+                
     <!-- Navbar End -->
 
     @RenderBody()
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Fortunaweg 4, 3113 AN Schiedam, Netherlands</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+31 6 84737499</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Opening Hours</h4>
-                    <h6 class="text-light">Monday - Saturday:</h6>
-                    <p class="mb-4">09.00 AM - 06.00 PM</p>
-                    
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Diagnostic Test</a>
-                    <a class="btn btn-link" href="">Engine Servicing</a>
-                    <a class="btn btn-link" href="">Tires Replacement</a>
-                    <a class="btn btn-link" href="">Oil Changing</a>
-                    <a class="btn btn-link" href="">Vacuam Cleaning</a>
-                </div>
-               
-            </div>
-        </div>
+<div class="marketum_footer_container marketum_top_footer_part_on marketum_prefooter_on marketum_footer_on">
+                        <div class="marketum_top_footer_container">
         <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            <div class="marketum_top_footer_wrapper">
+                                    <div class="marketum_top_footer_logo_container">
+                        <a class="marketum_top_footer_logo" href="./"></a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                        <div class="marketum_top_footer_socials_container">
+                        <ul class="marketum_top_footer_socials">
+                    <li>
+                        <a class="hs_facebook" href="https://www.facebook.com/HuisartAuto" target="_self">Facebook
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_twitter" href="https://www.tiktok.com/@@huisartsauto?_t=8n5VEqb4wAT&_r=1" target="_self">TIKTOK
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_linkedin" href="https://maps.app.goo.gl/kYec7Dah4sgPnKgn7?g_st=ic" target="_self">MAPS
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="hs_instagram" href="https://www.instagram.com/huisartsauto?igsh=MW42NmV5YnB3M3A0bQ%3D%3D&utm_source=qr" target="_self">Instagram
+                        </a>
+                    </li>
+                </ul>                    </div>
+                                </div>
         </div>
     </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+                                <div class="marketum_prefooter_container">
+                                <div class="container">
+                                    <div class="marketum_prefooter_wrapper marketum_prefooter_type_2">
+                                        <div id="marketum_socials_widget-3" class="widget footer_widget widget_marketum_socials_widget"><div class="marketum_footer_widget_wrapper"><h4 class="widget-title marketum_footer_widget_title">Contactgegevens</h4><div class="marketum_socials_widget_wrapper content_align_left"><div class="marketum_additional_info">
+                                <p class="marketum_contacts_widget_address">
+                                    Fortunaweg 6, 3113 AN Schiedam
+                                </p>
+                            
+                                <p class="marketum_contacts_widget_phones">
+                                            <span class="marketum_contacts_widget_phone_1">
+                                                <a href="tel:+12347198948">
+                                                    +31 684 7374 99
+                                                </a>
+                                            </span>
+                                        
+                                            <span class="marketum_contacts_widget_phone_2">
+                                                <a href="tel:+19876543210">
+                                                    +31 614 8875 69
+                                                </a>
+                                            </span>
+                                        
+                                </p>
+                            
+                                <p class="marketum_contacts_widget_email">
+                                            <span class="marketum_contacts_widget_email_title"></span>
+                                        
+                                            <span class="marketum_contacts_widget_email_info"></span>
+                                        
+                                            <a href="mailto:support@marketum.com">
+                                                info@artsauto.nl
+                                            </a>
+                                        
+                                </p>
+                            </div></div></div></div><div id="nav_menu-3" class="widget footer_widget widget_nav_menu"><div class="marketum_footer_widget_wrapper"><h4 class="widget-title marketum_footer_widget_title">Onderhoud</h4><div class="menu-prefooter-menu-2-container"><ul id="menu-prefooter-menu-2" class="menu">
+                                <li id="menu-item-431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431"><a href="./about/">About Us</a></li>
+<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="./f-a-q/">Documentation</a></li>
+<li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-446"><a href="./careers/">Careers</a></li>
+<li id="menu-item-447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447"><a href="./my-services/">Services</a></li>
+<li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451"><a href="./gallery-masonry/">Gallery</a></li>
+<li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-449"><a href="./blog-grid/">Blog</a></li>
+<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="./projects/">Our Projects</a></li>
+<li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="./shop/">Products</a></li>
+<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="./contacts/">Contact</a></li>
+<li id="menu-item-448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448"><a href="./awesome-team/">Meet Team</a></li>
+<li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="./services-2/">Technology</a></li>
+</ul></div></div></div>                                    </div>
+                                </div>
+                            </div>
+                                <div class="marketum_footer footer_type_1">
+        <div class="container">
+            <div class="marketum_footer_wrapper">
+                                        <div class="marketum_copyright_container">
+                            2024 Alle rechten voorbehouden door Auto Arts B.V                        </div>
+                                                <div class="marketum_footer_menu_container">
+                            <ul id="menu-footer-menu" class="marketum_footer_menu"><li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-237"><a href="#">Privacy Policy</a></li>
+<li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="#">Terms &#038; Conditions</a></li>
+</ul>                        </div>
+                                    </div>
+        </div>
+    </div>
+                    </div>
+                        </div><!-- marketum_page_wrapper -->
+        <!-- Instagram Feed JS -->
+
+        <link rel='stylesheet' id='e-animations-css'  href='./assets/newTheme/css/animations.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='./assets/newTheme/js/index.js' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+
+/* ]]> */
+</script>
+
+<script type='text/javascript' src='./assets/newTheme/js/jquery.blockUI.min.js' id='jquery-blockui-js'></script>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/assets/lib/wow/wow.min.js"></script>
-    <script src="~/assets/lib/easing/easing.min.js"></script>
-    <script src="~/assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="~/assets/lib/counterup/counterup.min.js"></script>
-    <script src="~/assets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="~/assets/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="~/assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
-@*     <script src="~/assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
- *@
-    <script src="~/admin/plugins/select2/select2.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="~/assets/js/main.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.min.js"></script>
+
+<script type='text/javascript' src='./assets/newTheme/js/tilt.jquery.min.js' id='tilt-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/owl.carousel.min.js' id='owl-carousel-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/isotope.pkgd.min.js' id='isotope-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/theme.js' id='marketum-theme-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/slick.min.js' id='slick_slider-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/jquery.fancybox.min.js' id='fancybox-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/content-slider-widget.js' id='content_slider_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/causes-slider-widget.js' id='causes_slider_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/video-widget.js' id='video_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/image-box-widget.js' id='image_box_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/jquery-numerator.min.js' id='jquery-numerator-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/testimonials-widget.js' id='testimonials_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/linked-item-widget.js' id='linked_item_widget-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/webpack.runtime.min.js' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/frontend-modules.min.js' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/waypoints.min.js' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='./assets/newTheme/js/core.min.js' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.7.6","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/demo.artureanec.com\/themes\/marketum\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":217,"title":"Marketum%20%E2%80%93%20Just%20another%20WordPress%20site","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src='./assets/newTheme/js/frontend.min.js' id='elementor-frontend-js'></script>
+    </body>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
-
 </html>
